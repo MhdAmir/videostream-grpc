@@ -1,0 +1,10 @@
+**/__pycache__/
+nedo-work/
+__pycache__/
+*.pyc
+try*.py
+vision-stream/
+**/node_modules/
+**/hls
+**/obj
+**/bin
