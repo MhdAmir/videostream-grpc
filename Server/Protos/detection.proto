@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service DetectionService {
+  rpc StreamDetections (stream DetectionRequest) returns (DetectionResponse);
+}
+
+message DetectionRequest {
+  string source = 1; // Stream source identifier
+  bytes image = 2;   // Raw image data
+}
+
+message DetectionResponse {
+  string status = 1; // Response status message
+}
